@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Velocity App Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Velocity App Studio Logo">
+                    <span>Velocity App Studio</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header section" style="padding: 120px 0 60px; background: linear-gradient(135deg, #f5f3ff, #ede9fe);">
+            <div class="container" style="text-align: center;">
+                <h1 style="font-size: 3rem; margin-bottom: 1rem;">Our App Portfolio</h1>
+                <p style="color: var(--text-muted); max-width: 800px; margin: 0 auto; font-size: 1.1rem;">A showcase of our most successful Android applications and utility tools.</p>
+            </div>
+        </section>
+
+        <section class="portfolio-grid section">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 40px;">
+                    <!-- App 1 -->
+                    <div class="portfolio-card reveal" style="background: white; border-radius: var(--radius); overflow: hidden; box-shadow: var(--card-shadow);">
+                        <div style="height: 300px; overflow: hidden; background: #000; display: flex; justify-content: center; align-items: center; padding: 20px;">
+                            <img src="images/app1.png" alt="MirrorCast Pro" style="height: 100%; border-radius: 10px;">
+                        </div>
+                        <div style="padding: 30px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                <h3 style="font-size: 1.5rem;">MirrorCast Pro</h3>
+                                <span style="background: #fdf2f2; color: #991b1b; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Utility</span>
+                            </div>
+                            <p style="color: var(--text-muted); margin-bottom: 20px;">Advanced screen mirroring for Android. Cast your screen to any smart TV or PC with minimal latency.</p>
+                            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 25px;">
+                                <span style="background: var(--bg-alt); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Kotlin</span>
+                                <span style="background: var(--bg-alt); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">WebRTC</span>
+                                <span style="background: var(--bg-alt); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">DLNA</span>
+                            </div>
+                            <div style="display: flex; gap: 15px;">
+                                <a href="#" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;"><i class="fab fa-google-play"></i> Google Play</a>
+                                <a href="#" class="btn btn-outline" style="padding: 10px 20px; font-size: 0.9rem;">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App 2 -->
+                    <div class="portfolio-card reveal" style="background: white; border-radius: var(--radius); overflow: hidden; box-shadow: var(--card-shadow);">
+                        <div style="height: 300px; overflow: hidden; background: #f8fafc; display: flex; justify-content: center; align-items: center; padding: 20px;">
+                            <img src="images/app2.png" alt="VoltSaver AI" style="height: 100%; border-radius: 10px;">
+                        </div>
+                        <div style="padding: 30px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                <h3 style="font-size: 1.5rem;">VoltSaver AI</h3>
+                                <span style="background: #ecfdf5; color: #065f46; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Tool</span>
+                            </div>
+                            <p style="color: var(--text-muted); margin-bottom: 20px;">AI-powered battery optimization that learns your usage patterns to extend battery life by up to 30%.</p>
+                            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 25px;">
+                                <span style="background: var(--bg-alt); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Java</span>
+                                <span style="background: var(--bg-alt); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">ML Kit</span>
+                                <span style="background: var(--bg-alt); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Firebase</span>
+                            </div>
+                            <div style="display: flex; gap: 15px;">
+                                <a href="#" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;"><i class="fab fa-google-play"></i> Google Play</a>
+                                <a href="#" class="btn btn-outline" style="padding: 10px 20px; font-size: 0.9rem;">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App 3 -->
+                    <div class="portfolio-card reveal" style="background: white; border-radius: var(--radius); overflow: hidden; box-shadow: var(--card-shadow);">
+                        <div style="height: 300px; overflow: hidden; background: #eff6ff; display: flex; justify-content: center; align-items: center; padding: 20px;">
+                            <i class="fas fa-file-invoice-dollar" style="font-size: 5rem; color: var(--primary);"></i>
+                        </div>
+                        <div style="padding: 30px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                <h3 style="font-size: 1.5rem;">FinTrack Pro</h3>
+                                <span style="background: #eff6ff; color: #1e40af; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Finance</span>
+                            </div>
+                            <p style="color: var(--text-muted); margin-bottom: 20px;">A sleek expense manager with automated SMS tracking and interactive financial charts.</p>
+                            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 25px;">
+                                <span style="background: var(--bg-alt); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Kotlin</span>
+                                <span style="background: var(--bg-alt); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Room DB</span>
+                                <span style="background: var(--bg-alt); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Charts.js</span>
+                            </div>
+                            <div style="display: flex; gap: 15px;">
+                                <a href="#" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;"><i class="fab fa-google-play"></i> Google Play</a>
+                                <a href="#" class="btn btn-outline" style="padding: 10px 20px; font-size: 0.9rem;">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Reusing same footer -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="Velocity App Studio Logo">
+                        <span>Velocity App Studio</span>
+                    </a>
+                    <p>Pioneering the future of Android mobile experiences with cutting-edge technology and user-centric design.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Android Development</a></li>
+                        <li><a href="#">Screen Mirroring</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">App Optimization</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> hello@velocityappstudio.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Tech Valley, Silicon City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Velocity App Studio Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

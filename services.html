@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Velocity App Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Velocity App Studio Logo">
+                    <span>Velocity App Studio</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header section" style="padding: 120px 0 60px; background: linear-gradient(135deg, #f0f9ff, #e0f2fe);">
+            <div class="container" style="text-align: center;">
+                <h1 style="font-size: 3rem; margin-bottom: 1rem;">Our Specialized Services</h1>
+                <p style="color: var(--text-muted); max-width: 800px; margin: 0 auto; font-size: 1.1rem;">Comprehensive mobile solutions designed for performance and scalability.</p>
+            </div>
+        </section>
+
+        <section class="services-list section">
+            <div class="container">
+                <div style="display: grid; gap: 80px;">
+                    <!-- Service 1 -->
+                    <div class="service-item reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="Android App Development" style="border-radius: var(--radius); box-shadow: var(--card-shadow);">
+                        </div>
+                        <div class="service-text">
+                            <div style="width: 60px; height: 60px; background: var(--bg-alt); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; color: var(--primary); font-size: 1.5rem;">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <h2 style="margin-bottom: 1.5rem;">Android App Development</h2>
+                            <p style="margin-bottom: 20px;">We specialize in building native Android applications using Kotlin and Java. From ideation to deployment, we ensure your app adheres to Material Design guidelines and provides a seamless user experience.</p>
+                            <ul style="margin-bottom: 30px;">
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--secondary); margin-right: 10px;"></i> Custom UI/UX Design</li>
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--secondary); margin-right: 10px;"></i> Integration with REST APIs</li>
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--secondary); margin-right: 10px;"></i> Advanced Background Processing</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-item reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                        <div class="service-text" style="order: 1;">
+                            <div style="width: 60px; height: 60px; background: var(--bg-alt); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; color: var(--secondary); font-size: 1.5rem;">
+                                <i class="fas fa-cast"></i>
+                            </div>
+                            <h2 style="margin-bottom: 1.5rem;">Screen Mirroring Solutions</h2>
+                            <p style="margin-bottom: 20px;">Leverage our expertise in MediaProjection and low-latency streaming. we build robust mirroring apps that connect smartphones to TVs, PCs, and other smart devices with zero lag.</p>
+                            <ul style="margin-bottom: 30px;">
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i> Low Latency Encoding</li>
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i> Multi-protocol Support (DLNA, Miracast)</li>
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i> High-Resolution Streaming</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline">Learn More</a>
+                        </div>
+                        <div class="service-image" style="order: 2;">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Screen Mirroring" style="border-radius: var(--radius); box-shadow: var(--card-shadow);">
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-item reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bbbda5366392?auto=format&fit=crop&w=800&q=80" alt="App Optimization" style="border-radius: var(--radius); box-shadow: var(--card-shadow);">
+                        </div>
+                        <div class="service-text">
+                            <div style="width: 60px; height: 60px; background: var(--bg-alt); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; color: var(--accent); font-size: 1.5rem;">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <h2 style="margin-bottom: 1.5rem;">Performance Optimization</h2>
+                            <p style="margin-bottom: 20px;">Is your app slow or battery-draining? We provide deep audits and optimization services to improve app response times, reduce APK size, and enhance memory management.</p>
+                            <ul style="margin-bottom: 30px;">
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Memory Leak Analysis</li>
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Layout Flattening</li>
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Database Performance Tuning</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section" style="background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; text-align: center;">
+            <div class="container">
+                <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1.5rem;">Ready to Build Your Next Big Idea?</h2>
+                <p style="margin-bottom: 2.5rem; font-size: 1.1rem; opacity: 0.9;">Contact us today for a free consultation and let's bring your vision to life.</p>
+                <a href="contact.html" class="btn" style="background: white; color: var(--primary);">Start a Project</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Reusing same footer -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="Velocity App Studio Logo">
+                        <span>Velocity App Studio</span>
+                    </a>
+                    <p>Pioneering the future of Android mobile experiences with cutting-edge technology and user-centric design.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Android Development</a></li>
+                        <li><a href="#">Screen Mirroring</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">App Optimization</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> hello@velocityappstudio.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Tech Valley, Silicon City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Velocity App Studio Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
