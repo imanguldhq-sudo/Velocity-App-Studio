@@ -3,18 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Velocity App Studio | Premium Android App Development Solutions</title>
-    <meta name="description" content="We create fast, secure, and high-performance Android applications. Specialists in mobile utility apps and screen mirroring solutions.">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Velocity App Studio | Elite Android Development</title>
+    <meta name="description" content="Build powerful, scalable Android applications with Velocity App Studio. Elite mobile solutions, screen mirroring experts, and performance optimization.">
     
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -24,7 +17,7 @@
             <nav>
                 <a href="index.html" class="logo">
                     <img src="images/logo.png" alt="Velocity App Studio Logo">
-                    <span>Velocity App Studio</span>
+                    <span>Velocity<span style="color: var(--primary);">AppStudio</span></span>
                 </a>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
@@ -33,105 +26,157 @@
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="mobile-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <a href="contact.html" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.9rem;">Start Project</a>
             </nav>
         </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero section">
+        <section class="hero">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
             <div class="container">
-                <div class="hero-grid" style="display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: center; gap: 60px;">
-                    <div class="hero-content">
-                        <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem; line-height: 1.1;">Build Powerful <span style="color: var(--primary); background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Android Apps</span> That Scale</h1>
-                        <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2.5rem; max-width: 600px;">We create fast, secure, and high-performance mobile applications tailored to your business needs.</p>
+                <div class="grid-2">
+                    <div class="hero-content reveal">
+                        <span style="background: rgba(37, 99, 235, 0.1); color: var(--primary); padding: 8px 16px; border-radius: 50px; font-weight: 600; font-size: 0.85rem; margin-bottom: 20px; display: inline-block;">#1 Android Solutions Agency</span>
+                        <h1 style="font-size: 4rem; line-height: 1.1; margin-bottom: 24px;">Build Powerful <span class="text-gradient">Android Apps</span> That Scale 🚀</h1>
+                        <p style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 40px; max-width: 550px;">We craft fast, secure, and high-performance mobile applications that drive growth and delight users.</p>
                         <div class="hero-btns" style="display: flex; gap: 20px;">
                             <a href="portfolio.html" class="btn btn-primary">View Apps</a>
-                            <a href="contact.html" class="btn btn-outline">Get Started</a>
-                        </div>
-                        <div class="trust-badges" style="margin-top: 50px; display: flex; gap: 40px; align-items: center; filter: grayscale(1); opacity: 0.6;">
-                            <i class="fab fa-google-play fa-2x"></i>
-                            <i class="fab fa-android fa-2x"></i>
-                            <i class="fas fa-shield-alt fa-2x"></i>
+                            <a href="contact.html" class="btn btn-outline">Contact Us</a>
                         </div>
                     </div>
-                    <div class="hero-image">
-                        <img src="images/hero.png" alt="App Development Illustration" style="width: 100%; filter: drop-shadow(0 20px 50px rgba(0,0,0,0.1));">
+                    <div class="hero-visual reveal" style="position: relative;">
+                        <img src="images/hero.png" alt="App Development" style="width: 100%; filter: drop-shadow(0 30px 60px rgba(0,0,0,0.12));">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="features section" style="background-color: var(--bg-alt);">
+        <!-- Trust Bar -->
+        <section style="padding: 40px 0; border-bottom: 1px solid rgba(0,0,0,0.05);">
             <div class="container">
-                <div class="section-header" style="text-align: center; margin-bottom: 60px;">
-                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Why Choose Us?</h2>
-                    <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto;">Expertise in crafting premium Android solutions with a focus on performance and user experience.</p>
+                <div style="display: flex; justify-content: space-around; align-items: center; opacity: 0.4; filter: grayscale(1); flex-wrap: wrap; gap: 30px;">
+                    <i class="fab fa-google-play fa-3x"></i>
+                    <i class="fab fa-android fa-3x"></i>
+                    <i class="fas fa-rocket fa-3x"></i>
+                    <i class="fas fa-shield-halved fa-3x"></i>
+                    <i class="fas fa-bolt-lightning fa-3x"></i>
                 </div>
-                <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
-                    <div class="feature-card reveal" style="background: white; padding: 40px; border-radius: var(--radius); box-shadow: var(--card-shadow); text-align: center;">
-                        <div class="feature-icon" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;">
-                            <i class="fas fa-code"></i>
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <section class="section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 80px;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Our Expertise</h2>
+                    <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Specialized mobile services designed to help your business excel in the Android ecosystem.</p>
+                </div>
+                <div class="grid-3">
+                    <div class="card glass-card reveal">
+                        <div class="icon-box" style="background: rgba(37, 99, 235, 0.1); color: var(--primary);">
+                            <i class="fas fa-mobile-screen"></i>
                         </div>
-                        <h3>Custom Development</h3>
-                        <p style="color: var(--text-muted); margin-top: 15px;">Native Android apps built with the latest Kotlin and Java technologies.</p>
+                        <h3>App Development</h3>
+                        <p style="color: var(--text-muted); margin-top: 16px;">Full-cycle native Android development using Kotlin and modern architecture.</p>
                     </div>
-                    <div class="feature-card reveal" style="background: white; padding: 40px; border-radius: var(--radius); box-shadow: var(--card-shadow); text-align: center;">
-                        <div class="feature-icon" style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;">
-                            <i class="fas fa-tv"></i>
+                    <div class="card glass-card reveal">
+                        <div class="icon-box" style="background: rgba(6, 182, 212, 0.1); color: var(--accent);">
+                            <i class="fas fa-cast"></i>
                         </div>
                         <h3>Screen Mirroring</h3>
-                        <p style="color: var(--text-muted); margin-top: 15px;">Advanced streaming and mirroring solutions for all devices.</p>
+                        <p style="color: var(--text-muted); margin-top: 16px;">Advanced low-latency streaming solutions for TVs and desktop devices.</p>
                     </div>
-                    <div class="feature-card reveal" style="background: white; padding: 40px; border-radius: var(--radius); box-shadow: var(--card-shadow); text-align: center;">
-                        <div class="feature-icon" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 20px;">
-                            <i class="fas fa-bolt"></i>
+                    <div class="card glass-card reveal">
+                        <div class="icon-box" style="background: rgba(124, 58, 237, 0.1); color: var(--secondary);">
+                            <i class="fas fa-gauge-high"></i>
                         </div>
-                        <h3>Performance First</h3>
-                        <p style="color: var(--text-muted); margin-top: 15px;">Optimized code for blazing fast speeds and low battery consumption.</p>
+                        <h3>Performance</h3>
+                        <p style="color: var(--text-muted); margin-top: 16px;">Comprehensive optimization to reduce battery drain and increase speed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Showcase -->
+        <section class="section" style="background: #f8fafc;">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 60px;">
+                    <div>
+                        <h2 style="font-size: 2.5rem;">Featured Products</h2>
+                        <p style="color: var(--text-muted);">Apps loved by millions of users worldwide.</p>
+                    </div>
+                    <a href="portfolio.html" class="btn btn-outline">Explore All</a>
+                </div>
+                <div class="grid-2">
+                    <div class="card glass-card reveal" style="display: flex; gap: 30px; align-items: center; padding: 30px;">
+                        <img src="images/app1.png" alt="MirrorCast" style="width: 140px; border-radius: 20px; box-shadow: var(--shadow-lg);">
+                        <div>
+                            <h3>MirrorCast Pro</h3>
+                            <div style="color: #fbbf24; margin: 10px 0;">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <span style="color: var(--text-muted); font-size: 0.9rem; margin-left: 5px;">(4.8/5)</span>
+                            </div>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Top-rated utility for seamless Android to TV screen sharing.</p>
+                            <span style="font-weight: 700; color: var(--primary); display: block; margin-bottom: 15px;">500K+ Downloads</span>
+                            <a href="#" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.85rem;"><i class="fab fa-google-play"></i> Download</a>
+                        </div>
+                    </div>
+                    <div class="card glass-card reveal" style="display: flex; gap: 30px; align-items: center; padding: 30px;">
+                        <img src="images/app2.png" alt="VoltSaver" style="width: 140px; border-radius: 20px; box-shadow: var(--shadow-lg);">
+                        <div>
+                            <h3>VoltSaver AI</h3>
+                            <div style="color: #fbbf24; margin: 10px 0;">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span style="color: var(--text-muted); font-size: 0.9rem; margin-left: 5px;">(5.0/5)</span>
+                            </div>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Smart battery optimization powered by machine learning.</p>
+                            <span style="font-weight: 700; color: var(--primary); display: block; margin-bottom: 15px;">1M+ Downloads</span>
+                            <a href="#" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.85rem;"><i class="fab fa-google-play"></i> Download</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Stats Section -->
-        <section class="stats section">
+        <section class="section">
             <div class="container">
-                <div style="display: flex; justify-content: space-around; text-align: center; background: linear-gradient(135deg, var(--primary), var(--secondary)); padding: 60px; border-radius: 30px; color: white;">
-                    <div class="stat-item">
-                        <h2 style="font-size: 3rem; color: white;">100+</h2>
-                        <p>Apps Delivered</p>
-                    </div>
-                    <div class="stat-item">
-                        <h2 style="font-size: 3rem; color: white;">1M+</h2>
-                        <p>Total Downloads</p>
-                    </div>
-                    <div class="stat-item">
-                        <h2 style="font-size: 3rem; color: white;">4.8</h2>
-                        <p>Avg Rating</p>
-                    </div>
-                    <div class="stat-item">
-                        <h2 style="font-size: 3rem; color: white;">50+</h2>
-                        <p>Happy Clients</p>
+                <div class="glass-card" style="padding: 80px; text-align: center; background: var(--primary-gradient); color: white; border: none;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
+                        <div>
+                            <h2 style="font-size: 3.5rem; color: white;">100+</h2>
+                            <p style="opacity: 0.8;">Projects Finished</p>
+                        </div>
+                        <div>
+                            <h2 style="font-size: 3.5rem; color: white;">5M+</h2>
+                            <p style="opacity: 0.8;">Active Users</p>
+                        </div>
+                        <div>
+                            <h2 style="font-size: 3.5rem; color: white;">99%</h2>
+                            <p style="opacity: 0.8;">Success Rate</p>
+                        </div>
+                        <div>
+                            <h2 style="font-size: 3.5rem; color: white;">24/7</h2>
+                            <p style="opacity: 0.8;">Expert Support</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Newsletter -->
-        <section class="newsletter section" style="background: var(--bg-alt);">
-            <div class="container">
-                <div style="background: white; padding: 60px; border-radius: var(--radius); box-shadow: var(--card-shadow); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <h2 style="margin-bottom: 1rem;">Stay Updated</h2>
-                    <p style="color: var(--text-muted); margin-bottom: 2rem;">Get the latest insights on Android development and mobile trends.</p>
-                    <form style="display: flex; gap: 10px; width: 100%; max-width: 500px;">
-                        <input type="email" placeholder="Your email address" style="flex: 1; padding: 15px 25px; border-radius: 50px; border: 1px solid #e2e8f0; outline: none;">
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
+        <!-- CTA -->
+        <section class="section">
+            <div class="container" style="text-align: center;">
+                <h2 style="font-size: 3rem; margin-bottom: 24px;">Ready to Start Your Journey?</h2>
+                <p style="color: var(--text-muted); margin-bottom: 40px; font-size: 1.1rem;">Let's collaborate to build something extraordinary for the Android world.</p>
+                <div style="display: flex; gap: 20px; justify-content: center;">
+                    <a href="contact.html" class="btn btn-primary">Get Started Now</a>
+                    <a href="https://wa.me/923329379661" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
                 </div>
             </div>
         </section>
@@ -139,49 +184,48 @@
 
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <img src="images/logo.png" alt="Velocity App Studio Logo">
-                        <span>Velocity App Studio</span>
+            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 60px; margin-bottom: 60px;">
+                <div>
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 24px;">
+                        <img src="images/logo.png" alt="Logo">
+                        <span>Velocity<span style="color: var(--primary);">AppStudio</span></span>
                     </a>
-                    <p>Pioneering the future of Android mobile experiences with cutting-edge technology and user-centric design.</p>
-                    <div class="social-links" style="display: flex; gap: 15px;">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    <p style="margin-bottom: 30px;">Premium Android development agency specialized in utility apps and high-performance mobile solutions.</p>
+                    <div style="display: flex; gap: 16px;">
+                        <a href="#" class="btn btn-outline" style="width: 44px; height: 44px; padding: 0; border-radius: 12px; border-color: rgba(255,255,255,0.1); color: white;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline" style="width: 44px; height: 44px; padding: 0; border-radius: 12px; border-color: rgba(255,255,255,0.1); color: white;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline" style="width: 44px; height: 44px; padding: 0; border-radius: 12px; border-color: rgba(255,255,255,0.1); color: white;"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul style="display: grid; gap: 12px;">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
+                <div>
                     <h4>Services</h4>
-                    <ul>
-                        <li><a href="#">Android Development</a></li>
-                        <li><a href="#">Screen Mirroring</a></li>
+                    <ul style="display: grid; gap: 12px;">
+                        <li><a href="#">Custom Apps</a></li>
+                        <li><a href="#">Mirroring</a></li>
+                        <li><a href="#">Optimization</a></li>
                         <li><a href="#">UI/UX Design</a></li>
-                        <li><a href="#">App Optimization</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:arsalankhan79661@gmail.com">arsalankhan79661@gmail.com</a></li>
-                        <li><i class="fas fa-phone"></i> <a href="https://wa.me/923329379661">+92 332 9379661</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Tech Valley, Silicon City</li>
+                <div>
+                    <h4>Contact Info</h4>
+                    <ul style="display: grid; gap: 16px;">
+                        <li><i class="fas fa-envelope" style="color: var(--primary); margin-right: 12px;"></i> arsalankhan79661@gmail.com</li>
+                        <li><i class="fas fa-phone" style="color: var(--primary); margin-right: 12px;"></i> +92 332 9379661</li>
+                        <li><i class="fas fa-location-dot" style="color: var(--primary); margin-right: 12px;"></i> Silicon Valley Tech Hub</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Velocity App Studio Solutions. All Rights Reserved.</p>
+            <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 40px; text-align: center; font-size: 0.9rem;">
+                <p>&copy; 2026 Velocity App Studio. All rights reserved.</p>
             </div>
         </div>
     </footer>

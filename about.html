@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Velocity App Studio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -16,8 +13,8 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="Velocity App Studio Logo">
-                    <span>Velocity App Studio</span>
+                    <img src="images/logo.png" alt="Logo">
+                    <span>Velocity<span style="color: var(--primary);">AppStudio</span></span>
                 </a>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -26,52 +23,48 @@
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="mobile-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <a href="contact.html" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.9rem;">Start Project</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="page-header section" style="padding: 120px 0 60px; background: linear-gradient(135deg, #f8fafc, #eff6ff);">
+        <section class="hero" style="padding-top: 140px; padding-bottom: 60px;">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1" style="background: var(--secondary);"></div>
+            </div>
             <div class="container" style="text-align: center;">
-                <h1 style="font-size: 3rem; margin-bottom: 1rem;">Our Mission & Vision</h1>
-                <p style="color: var(--text-muted); max-width: 800px; margin: 0 auto; font-size: 1.1rem;">Driven by passion, we build mobile experiences that connect people and simplify lives.</p>
+                <h1 style="font-size: 3.5rem; margin-bottom: 16px;">We Design The <span class="text-gradient">Future</span></h1>
+                <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto; font-size: 1.2rem;">At Velocity App Studio, we are more than just developers. We are product architects, designers, and innovators.</p>
             </div>
         </section>
 
-        <section class="about-content section">
+        <section class="section">
             <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
-                    <div class="about-text">
-                        <h2 style="margin-bottom: 1.5rem; font-size: 2.2rem;">We are Experts in <span style="color: var(--primary);">Android Ecosystem</span></h2>
-                        <p style="margin-bottom: 1.5rem;">At Velocity App Studio, we don't just build apps; we architect digital solutions that drive business growth. With over 5 years of specialized experience in the Android platform, our team of developers and designers works tirelessly to deliver high-quality products.</p>
-                        <p style="margin-bottom: 2rem;">Our specialty lies in utility applications, specifically advanced screen mirroring and streaming technologies. We understand the nuances of the Android OS, ensuring your app runs smoothly across thousands of device variations.</p>
+                <div class="grid-2">
+                    <div class="reveal">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 24px;">Excellence in <span style="color: var(--primary);">Android Innovation</span></h2>
+                        <p style="margin-bottom: 20px; font-size: 1.1rem; color: var(--text-muted);">Founded with a vision to revolutionize the mobile utility market, Velocity App Studio has grown into a premier agency recognized for high-performance screen mirroring and system-level Android tools.</p>
+                        <p style="margin-bottom: 30px; font-size: 1.1rem; color: var(--text-muted);">Our mission is simple: to build apps that are not only powerful but also incredibly intuitive and user-friendly. We focus on native performance, clean UI, and scalable architecture.</p>
                         
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                                <i class="fas fa-check-circle" style="color: var(--primary); margin-top: 5px;"></i>
-                                <div>
-                                    <h4 style="margin-bottom: 5px;">Innovation First</h4>
-                                    <p style="font-size: 0.9rem; color: var(--text-muted);">Staying ahead of Android updates and features.</p>
-                                </div>
+                        <div class="grid-2" style="gap: 20px;">
+                            <div class="glass-card" style="padding: 24px; text-align: center;">
+                                <h3 style="font-size: 2rem; color: var(--primary);">5+</h3>
+                                <p style="font-weight: 600;">Years of XP</p>
                             </div>
-                            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                                <i class="fas fa-check-circle" style="color: var(--primary); margin-top: 5px;"></i>
-                                <div>
-                                    <h4 style="margin-bottom: 5px;">User-Centric</h4>
-                                    <p style="font-size: 0.9rem; color: var(--text-muted);">Designing for real people, not just screens.</p>
-                                </div>
+                            <div class="glass-card" style="padding: 24px; text-align: center;">
+                                <h3 style="font-size: 2rem; color: var(--accent);">50+</h3>
+                                <p style="font-weight: 600;">Elite Clients</p>
                             </div>
                         </div>
                     </div>
-                    <div class="about-image">
-                        <div style="position: relative;">
-                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Team working" style="border-radius: var(--radius); box-shadow: var(--card-shadow);">
-                            <div style="position: absolute; bottom: -30px; left: -30px; background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--card-shadow); display: flex; align-items: center; gap: 20px;">
-                                <h2 style="font-size: 3rem; color: var(--primary);">5+</h2>
-                                <p style="font-weight: 600;">Years of<br>Excellence</p>
+                    <div class="reveal" style="position: relative;">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Our Team" style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                        <div class="glass-card" style="position: absolute; bottom: -20px; left: -20px; padding: 30px; display: flex; align-items: center; gap: 20px;">
+                            <i class="fas fa-trophy fa-2x" style="color: #fbbf24;"></i>
+                            <div>
+                                <h4 style="margin: 0;">Award Winning</h4>
+                                <p style="font-size: 0.85rem; margin: 0;">Top Mobile Agency 2026</p>
                             </div>
                         </div>
                     </div>
@@ -79,26 +72,27 @@
             </div>
         </section>
 
-        <section class="values section" style="background: var(--bg-alt);">
+        <!-- Values -->
+        <section class="section" style="background: #f8fafc;">
             <div class="container">
-                <div style="text-align: center; margin-bottom: 60px;">
-                    <h2>Our Core Values</h2>
+                <div style="text-align: center; margin-bottom: 80px;">
+                    <h2>Our Core Principles</h2>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
-                    <div class="reveal" style="background: white; padding: 40px; border-radius: var(--radius); box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-                        <i class="fas fa-lightbulb" style="font-size: 2rem; color: var(--accent); margin-bottom: 20px;"></i>
-                        <h3>Innovation</h3>
-                        <p style="color: var(--text-muted); margin-top: 15px;">We constantly push the boundaries of what's possible on the Android platform.</p>
+                <div class="grid-3">
+                    <div class="card glass-card reveal">
+                        <i class="fas fa-gem fa-2x" style="color: var(--primary); margin-bottom: 24px;"></i>
+                        <h3>Premium Quality</h3>
+                        <p style="color: var(--text-muted); margin-top: 16px;">We never settle for "good enough". Every line of code and every pixel is polished to perfection.</p>
                     </div>
-                    <div class="reveal" style="background: white; padding: 40px; border-radius: var(--radius); box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-                        <i class="fas fa-handshake" style="font-size: 2rem; color: var(--primary); margin-bottom: 20px;"></i>
-                        <h3>Transparency</h3>
-                        <p style="color: var(--text-muted); margin-top: 15px;">Clear communication and honest feedback at every stage of the development process.</p>
+                    <div class="card glass-card reveal">
+                        <i class="fas fa-handshake fa-2x" style="color: var(--accent); margin-bottom: 24px;"></i>
+                        <h3>Full Transparency</h3>
+                        <p style="color: var(--text-muted); margin-top: 16px;">We believe in honest partnerships and clear communication throughout the development lifecycle.</p>
                     </div>
-                    <div class="reveal" style="background: white; padding: 40px; border-radius: var(--radius); box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-                        <i class="fas fa-gem" style="font-size: 2rem; color: var(--secondary); margin-bottom: 20px;"></i>
-                        <h3>Quality</h3>
-                        <p style="color: var(--text-muted); margin-top: 15px;">We never compromise on the performance or stability of our applications.</p>
+                    <div class="card glass-card reveal">
+                        <i class="fas fa-lightbulb fa-2x" style="color: var(--secondary); margin-bottom: 24px;"></i>
+                        <h3>Constant Innovation</h3>
+                        <p style="color: var(--text-muted); margin-top: 16px;">The Android world moves fast. We stay ahead of the curve with the latest tech and trends.</p>
                     </div>
                 </div>
             </div>
@@ -107,43 +101,43 @@
 
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <img src="images/logo.png" alt="Velocity App Studio Logo">
-                        <span>Velocity App Studio</span>
+            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 60px; margin-bottom: 60px;">
+                <div>
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 24px;">
+                        <img src="images/logo.png" alt="Logo">
+                        <span>Velocity<span style="color: var(--primary);">AppStudio</span></span>
                     </a>
-                    <p>Pioneering the future of Android mobile experiences with cutting-edge technology and user-centric design.</p>
+                    <p style="margin-bottom: 30px;">Premium Android development agency specialized in utility apps and high-performance mobile solutions.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul style="display: grid; gap: 12px;">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
+                <div>
                     <h4>Services</h4>
-                    <ul>
-                        <li><a href="#">Android Development</a></li>
-                        <li><a href="#">Screen Mirroring</a></li>
+                    <ul style="display: grid; gap: 12px;">
+                        <li><a href="#">Custom Apps</a></li>
+                        <li><a href="#">Mirroring</a></li>
+                        <li><a href="#">Optimization</a></li>
                         <li><a href="#">UI/UX Design</a></li>
-                        <li><a href="#">App Optimization</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:arsalankhan79661@gmail.com">arsalankhan79661@gmail.com</a></li>
-                        <li><i class="fas fa-phone"></i> <a href="https://wa.me/923329379661">+92 332 9379661</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Tech Valley, Silicon City</li>
+                <div>
+                    <h4>Contact Info</h4>
+                    <ul style="display: grid; gap: 16px;">
+                        <li><i class="fas fa-envelope" style="color: var(--primary); margin-right: 12px;"></i> arsalankhan79661@gmail.com</li>
+                        <li><i class="fas fa-phone" style="color: var(--primary); margin-right: 12px;"></i> +92 332 9379661</li>
+                        <li><i class="fas fa-location-dot" style="color: var(--primary); margin-right: 12px;"></i> Silicon Valley Tech Hub</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Velocity App Studio Solutions. All Rights Reserved.</p>
+            <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 40px; text-align: center; font-size: 0.9rem;">
+                <p>&copy; 2026 Velocity App Studio. All rights reserved.</p>
             </div>
         </div>
     </footer>

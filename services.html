@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services | Velocity App Studio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -16,8 +13,8 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="Velocity App Studio Logo">
-                    <span>Velocity App Studio</span>
+                    <img src="images/logo.png" alt="Logo">
+                    <span>Velocity<span style="color: var(--primary);">AppStudio</span></span>
                 </a>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -26,137 +23,128 @@
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="mobile-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <a href="contact.html" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.9rem;">Start Project</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="page-header section" style="padding: 120px 0 60px; background: linear-gradient(135deg, #f0f9ff, #e0f2fe);">
+        <section class="hero" style="padding-top: 140px; padding-bottom: 60px;">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-2" style="background: var(--accent);"></div>
+            </div>
             <div class="container" style="text-align: center;">
-                <h1 style="font-size: 3rem; margin-bottom: 1rem;">Our Specialized Services</h1>
-                <p style="color: var(--text-muted); max-width: 800px; margin: 0 auto; font-size: 1.1rem;">Comprehensive mobile solutions designed for performance and scalability.</p>
+                <h1 style="font-size: 3.5rem; margin-bottom: 16px;">Expert <span class="text-gradient">Mobile Solutions</span></h1>
+                <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto; font-size: 1.2rem;">We provide a comprehensive suite of services to take your Android application from concept to market leadership.</p>
             </div>
         </section>
 
-        <section class="services-list section">
+        <section class="section">
             <div class="container">
-                <div style="display: grid; gap: 80px;">
+                <div style="display: grid; gap: 100px;">
                     <!-- Service 1 -->
-                    <div class="service-item reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
-                        <div class="service-image">
-                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="Android App Development" style="border-radius: var(--radius); box-shadow: var(--card-shadow);">
+                    <div class="grid-2 reveal">
+                        <div class="service-visual">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="Android Development" style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
                         </div>
-                        <div class="service-text">
-                            <div style="width: 60px; height: 60px; background: var(--bg-alt); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; color: var(--primary); font-size: 1.5rem;">
+                        <div class="service-info">
+                            <div class="icon-box" style="background: rgba(37, 99, 235, 0.1); color: var(--primary);">
                                 <i class="fab fa-android"></i>
                             </div>
-                            <h2 style="margin-bottom: 1.5rem;">Android App Development</h2>
-                            <p style="margin-bottom: 20px;">We specialize in building native Android applications using Kotlin and Java. From ideation to deployment, we ensure your app adheres to Material Design guidelines and provides a seamless user experience.</p>
-                            <ul style="margin-bottom: 30px;">
-                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--secondary); margin-right: 10px;"></i> Custom UI/UX Design</li>
-                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--secondary); margin-right: 10px;"></i> Integration with REST APIs</li>
-                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--secondary); margin-right: 10px;"></i> Advanced Background Processing</li>
+                            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Native Android Development</h2>
+                            <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 24px;">We specialize in building robust, native Android applications using Kotlin and the latest Jetpack libraries. Our apps are built for speed, stability, and a premium user experience.</p>
+                            <ul style="display: grid; gap: 12px; margin-bottom: 30px;">
+                                <li><i class="fas fa-circle-check" style="color: var(--primary); margin-right: 12px;"></i> Custom UI/UX Implementation</li>
+                                <li>li><i class="fas fa-circle-check" style="color: var(--primary); margin-right: 12px;"></i> Advanced API Integrations</li>
+                                <li>li><i class="fas fa-circle-check" style="color: var(--primary); margin-right: 12px;"></i> Secure Offline Data Storage</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-outline">Learn More</a>
+                            <a href="contact.html" class="btn btn-outline">Consult Now</a>
                         </div>
                     </div>
 
                     <!-- Service 2 -->
-                    <div class="service-item reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
-                        <div class="service-text" style="order: 1;">
-                            <div style="width: 60px; height: 60px; background: var(--bg-alt); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; color: var(--secondary); font-size: 1.5rem;">
+                    <div class="grid-2 reveal">
+                        <div class="service-info" style="order: 2;">
+                            <div class="icon-box" style="background: rgba(6, 182, 212, 0.1); color: var(--accent);">
                                 <i class="fas fa-cast"></i>
                             </div>
-                            <h2 style="margin-bottom: 1.5rem;">Screen Mirroring Solutions</h2>
-                            <p style="margin-bottom: 20px;">Leverage our expertise in MediaProjection and low-latency streaming. we build robust mirroring apps that connect smartphones to TVs, PCs, and other smart devices with zero lag.</p>
-                            <ul style="margin-bottom: 30px;">
-                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i> Low Latency Encoding</li>
-                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i> Multi-protocol Support (DLNA, Miracast)</li>
-                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i> High-Resolution Streaming</li>
+                            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Screen Mirroring & Streaming</h2>
+                            <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 24px;">Leveraging MediaProjection and advanced encoding, we build industry-leading mirroring solutions. Connect Android devices to Smart TVs, PCs, and more with zero perceived lag.</p>
+                            <ul style="display: grid; gap: 12px; margin-bottom: 30px;">
+                                <li><i class="fas fa-circle-check" style="color: var(--accent); margin-right: 12px;"></i> Low-Latency Video Encoding</li>
+                                <li>li><i class="fas fa-circle-check" style="color: var(--accent); margin-right: 12px;"></i> Multi-Protocol Support (DLNA/Cast)</li>
+                                <li>li><i class="fas fa-circle-check" style="color: var(--accent); margin-right: 12px;"></i> Cross-Device Synchronization</li>
                             </ul>
                             <a href="contact.html" class="btn btn-outline">Learn More</a>
                         </div>
-                        <div class="service-image" style="order: 2;">
-                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Screen Mirroring" style="border-radius: var(--radius); box-shadow: var(--card-shadow);">
+                        <div class="service-visual" style="order: 1;">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Screen Mirroring" style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
                         </div>
                     </div>
 
                     <!-- Service 3 -->
-                    <div class="service-item reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
-                        <div class="service-image">
-                            <img src="https://images.unsplash.com/photo-1551288049-bbbda5366392?auto=format&fit=crop&w=800&q=80" alt="App Optimization" style="border-radius: var(--radius); box-shadow: var(--card-shadow);">
+                    <div class="grid-2 reveal">
+                        <div class="service-visual">
+                            <img src="https://images.unsplash.com/photo-1551288049-bbbda5366392?auto=format&fit=crop&w=800&q=80" alt="Optimization" style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
                         </div>
-                        <div class="service-text">
-                            <div style="width: 60px; height: 60px; background: var(--bg-alt); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; color: var(--accent); font-size: 1.5rem;">
-                                <i class="fas fa-tachometer-alt"></i>
+                        <div class="service-info">
+                            <div class="icon-box" style="background: rgba(124, 58, 237, 0.1); color: var(--secondary);">
+                                <i class="fas fa-bolt"></i>
                             </div>
-                            <h2 style="margin-bottom: 1.5rem;">Performance Optimization</h2>
-                            <p style="margin-bottom: 20px;">Is your app slow or battery-draining? We provide deep audits and optimization services to improve app response times, reduce APK size, and enhance memory management.</p>
-                            <ul style="margin-bottom: 30px;">
-                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Memory Leak Analysis</li>
-                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Layout Flattening</li>
-                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Database Performance Tuning</li>
+                            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">App Performance Audits</h2>
+                            <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 24px;">Is your app slow or battery-heavy? We perform deep technical audits to identify bottlenecks, memory leaks, and UI jank, ensuring your app runs smoothly on all devices.</p>
+                            <ul style="display: grid; gap: 12px; margin-bottom: 30px;">
+                                <li><i class="fas fa-circle-check" style="color: var(--secondary); margin-right: 12px;"></i> Memory & Battery Profiling</li>
+                                <li>li><i class="fas fa-circle-check" style="color: var(--secondary); margin-right: 12px;"></i> APK Size Reduction</li>
+                                <li>li><i class="fas fa-circle-check" style="color: var(--secondary); margin-right: 12px;"></i> Database Optimization</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-outline">Learn More</a>
+                            <a href="contact.html" class="btn btn-outline">Book Audit</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="cta section" style="background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; text-align: center;">
-            <div class="container">
-                <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1.5rem;">Ready to Build Your Next Big Idea?</h2>
-                <p style="margin-bottom: 2.5rem; font-size: 1.1rem; opacity: 0.9;">Contact us today for a free consultation and let's bring your vision to life.</p>
-                <a href="contact.html" class="btn" style="background: white; color: var(--primary);">Start a Project</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <!-- Reusing same footer -->
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <img src="images/logo.png" alt="Velocity App Studio Logo">
-                        <span>Velocity App Studio</span>
+            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 60px; margin-bottom: 60px;">
+                <div>
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 24px;">
+                        <img src="images/logo.png" alt="Logo">
+                        <span>Velocity<span style="color: var(--primary);">AppStudio</span></span>
                     </a>
-                    <p>Pioneering the future of Android mobile experiences with cutting-edge technology and user-centric design.</p>
+                    <p style="margin-bottom: 30px;">Premium Android development agency specialized in utility apps and high-performance mobile solutions.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul style="display: grid; gap: 12px;">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
+                <div>
                     <h4>Services</h4>
-                    <ul>
-                        <li><a href="#">Android Development</a></li>
-                        <li><a href="#">Screen Mirroring</a></li>
+                    <ul style="display: grid; gap: 12px;">
+                        <li><a href="#">Custom Apps</a></li>
+                        <li><a href="#">Mirroring</a></li>
+                        <li><a href="#">Optimization</a></li>
                         <li><a href="#">UI/UX Design</a></li>
-                        <li><a href="#">App Optimization</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:arsalankhan79661@gmail.com">arsalankhan79661@gmail.com</a></li>
-                        <li><i class="fas fa-phone"></i> <a href="https://wa.me/923329379661">+92 332 9379661</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Tech Valley, Silicon City</li>
+                <div>
+                    <h4>Contact Info</h4>
+                    <ul style="display: grid; gap: 16px;">
+                        <li><i class="fas fa-envelope" style="color: var(--primary); margin-right: 12px;"></i> arsalankhan79661@gmail.com</li>
+                        <li><i class="fas fa-phone" style="color: var(--primary); margin-right: 12px;"></i> +92 332 9379661</li>
+                        <li><i class="fas fa-location-dot" style="color: var(--primary); margin-right: 12px;"></i> Silicon Valley Tech Hub</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Velocity App Studio Solutions. All Rights Reserved.</p>
+            <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 40px; text-align: center; font-size: 0.9rem;">
+                <p>&copy; 2026 Velocity App Studio. All rights reserved.</p>
             </div>
         </div>
     </footer>

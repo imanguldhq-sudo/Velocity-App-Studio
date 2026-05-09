@@ -1,8 +1,8 @@
-// Velocity App Studio - Interactive Logic
+// Velocity App Studio - Premium Interactive Engine v2.0
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Reveal animations on scroll
-    const reveals = document.querySelectorAll('.reveal');
+    // 1. Smooth Reveal Animations
+    const revealElements = document.querySelectorAll('.reveal');
     
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -11,50 +11,56 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.1
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
     });
 
-    reveals.forEach(reveal => {
-        revealObserver.observe(reveal);
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // 2. Navbar Dynamic Background
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.style.padding = '10px 0';
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+            header.style.boxShadow = '0 10px 30px rgba(0,0,0,0.05)';
+        } else {
+            header.style.padding = '0';
+            header.style.background = 'rgba(255, 255, 255, 0.8)';
+            header.style.boxShadow = 'none';
+        }
     });
 
-    // Mobile Menu Toggle
-    const mobileToggle = document.querySelector('.mobile-toggle');
-    const navLinks = document.querySelector('.nav-links');
+    // 3. Button Micro-interactions
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(btn => {
+        btn.addEventListener('mousedown', () => {
+            btn.style.transform = 'scale(0.96)';
+        });
+        btn.addEventListener('mouseup', () => {
+            btn.style.transform = '';
+        });
+    });
 
-    if (mobileToggle) {
-        mobileToggle.addEventListener('click', () => {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-            if (navLinks.style.display === 'flex') {
-                navLinks.style.flexDirection = 'column';
-                navLinks.style.position = 'absolute';
-                navLinks.style.top = 'var(--header-height)';
-                navLinks.style.left = '0';
-                navLinks.style.width = '100%';
-                navLinks.style.background = 'white';
-                navLinks.style.padding = '20px';
-                navLinks.style.boxShadow = '0 10px 10px rgba(0,0,0,0.1)';
-            }
+    // 4. Parallax Effect for Hero Shapes
+    window.addEventListener('mousemove', (e) => {
+        const shapes = document.querySelectorAll('.shape');
+        const x = e.clientX / window.innerWidth;
+        const y = e.clientY / window.innerHeight;
+
+        shapes.forEach((shape, index) => {
+            const speed = (index + 1) * 20;
+            shape.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+        });
+    });
+
+    // 5. Lazy Loading Images
+    const images = document.querySelectorAll('img');
+    if ('loading' in HTMLImageElement.prototype) {
+        images.forEach(img => {
+            img.loading = 'lazy';
         });
     }
 
-    // Smooth scroll for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    // Handle Navbar scroll background
-    window.addEventListener('scroll', () => {
-        const header = document.querySelector('header');
-        if (window.scrollY > 50) {
-            header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
-        } else {
-            header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
-        }
-    });
+    console.log('Velocity App Studio: Premium UI Engine Initialized');
 });

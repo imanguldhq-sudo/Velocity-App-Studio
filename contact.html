@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Velocity App Studio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -16,8 +13,8 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="Velocity App Studio Logo">
-                    <span>Velocity App Studio</span>
+                    <img src="images/logo.png" alt="Logo">
+                    <span>Velocity<span style="color: var(--primary);">AppStudio</span></span>
                 </a>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -26,152 +23,143 @@
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
-                <div class="mobile-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <a href="contact.html" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.9rem;">Start Project</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="page-header section" style="padding: 120px 0 60px; background: linear-gradient(135deg, #fdf2f8, #fbcfe8);">
+        <section class="hero" style="padding-top: 140px; padding-bottom: 60px;">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-2" style="background: var(--secondary); opacity: 0.1;"></div>
+            </div>
             <div class="container" style="text-align: center;">
-                <h1 style="font-size: 3rem; margin-bottom: 1rem;">Get In Touch</h1>
-                <p style="color: var(--text-muted); max-width: 800px; margin: 0 auto; font-size: 1.1rem;">Have a project in mind? We'd love to hear from you. Let's build something amazing together.</p>
+                <h1 style="font-size: 3.5rem; margin-bottom: 16px;">Let's <span class="text-gradient">Connect</span></h1>
+                <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto; font-size: 1.2rem;">Have a revolutionary app idea? Let's discuss how we can bring it to life with elite development.</p>
             </div>
         </section>
 
-        <section class="contact-section section">
+        <section class="section">
             <div class="container">
-                <div style="display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 60px;">
-                    <!-- Contact Info -->
-                    <div class="contact-info">
-                        <h2 style="margin-bottom: 2rem;">Contact Information</h2>
-                        <div style="display: grid; gap: 30px;">
-                            <div style="display: flex; gap: 20px; align-items: flex-start;">
-                                <div style="width: 50px; height: 50px; background: var(--bg-alt); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                <div class="grid-2" style="gap: 80px;">
+                    <!-- Info -->
+                    <div class="reveal">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 32px;">Get in touch</h2>
+                        <p style="color: var(--text-muted); margin-bottom: 48px; font-size: 1.1rem;">We're always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                        
+                        <div style="display: grid; gap: 32px;">
+                            <div style="display: flex; gap: 24px; align-items: center;">
+                                <div class="icon-box" style="background: rgba(37, 99, 235, 0.1); color: var(--primary); margin: 0;">
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div>
-                                    <h4 style="margin-bottom: 5px;">Email Us</h4>
-                                    <p style="color: var(--text-muted);"><a href="mailto:arsalankhan79661@gmail.com">arsalankhan79661@gmail.com</a></p>
+                                    <h4 style="margin-bottom: 4px;">Email</h4>
+                                    <a href="mailto:arsalankhan79661@gmail.com" style="color: var(--text-muted);">arsalankhan79661@gmail.com</a>
                                 </div>
                             </div>
-                            <div style="display: flex; gap: 20px; align-items: flex-start;">
-                                <div style="width: 50px; height: 50px; background: var(--bg-alt); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary);">
+                            <div style="display: flex; gap: 24px; align-items: center;">
+                                <div class="icon-box" style="background: rgba(6, 182, 212, 0.1); color: var(--accent); margin: 0;">
                                     <i class="fas fa-phone-alt"></i>
                                 </div>
                                 <div>
-                                    <h4 style="margin-bottom: 5px;">Call Us</h4>
-                                    <p style="color: var(--text-muted);">+92 332 9379661</p>
-                                    <p style="color: var(--text-muted);">Mon - Fri, 9am - 6pm</p>
+                                    <h4 style="margin-bottom: 4px;">Phone</h4>
+                                    <span style="color: var(--text-muted);">+92 332 9379661</span>
                                 </div>
                             </div>
-                            <div style="display: flex; gap: 20px; align-items: flex-start;">
-                                <div style="width: 50px; height: 50px; background: var(--bg-alt); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent);">
+                            <div style="display: flex; gap: 24px; align-items: center;">
+                                <div class="icon-box" style="background: rgba(34, 197, 94, 0.1); color: #22c55e; margin: 0;">
                                     <i class="fab fa-whatsapp"></i>
                                 </div>
                                 <div>
-                                    <h4 style="margin-bottom: 5px;">WhatsApp</h4>
-                                    <p style="color: var(--text-muted);"><a href="https://wa.me/923329379661" style="color: var(--primary); font-weight: 600;">Chat on WhatsApp</a></p>
-                                    <p style="color: var(--text-muted);">Instant response</p>
+                                    <h4 style="margin-bottom: 4px;">WhatsApp</h4>
+                                    <a href="https://wa.me/923329379661" style="color: #22c55e; font-weight: 600;">Chat Instantly</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="social-links" style="margin-top: 50px;">
-                            <h4 style="margin-bottom: 20px;">Follow Us</h4>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="#" style="width: 40px; height: 40px; background: #3b5998; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" style="width: 40px; height: 40px; background: #1da1f2; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fab fa-twitter"></i></a>
-                                <a href="#" style="width: 40px; height: 40px; background: #0077b5; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fab fa-linkedin-in"></i></a>
+                        <div style="margin-top: 60px;">
+                            <h4 style="margin-bottom: 24px;">Social Presence</h4>
+                            <div style="display: flex; gap: 16px;">
+                                <a href="#" class="btn btn-outline" style="width: 50px; height: 50px; padding: 0; border-radius: 16px;"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-outline" style="width: 50px; height: 50px; padding: 0; border-radius: 16px;"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-outline" style="width: 50px; height: 50px; padding: 0; border-radius: 16px;"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Contact Form -->
-                    <div class="contact-form-container" style="background: white; padding: 50px; border-radius: var(--radius); box-shadow: var(--card-shadow);">
-                        <form id="contactForm">
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                    <!-- Form -->
+                    <div class="card glass-card reveal" style="padding: 60px;">
+                        <form style="display: grid; gap: 24px;">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
                                 <div>
-                                    <label style="display: block; margin-bottom: 8px; font-weight: 500;">Full Name</label>
-                                    <input type="text" placeholder="John Doe" required style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 8px; outline: none;">
+                                    <label style="display: block; margin-bottom: 10px; font-weight: 600; font-size: 0.9rem;">Full Name</label>
+                                    <input type="text" placeholder="John Doe" required style="width: 100%; padding: 14px 20px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.1); background: white; outline: none; transition: var(--transition);">
                                 </div>
                                 <div>
-                                    <label style="display: block; margin-bottom: 8px; font-weight: 500;">Email Address</label>
-                                    <input type="email" placeholder="john@example.com" required style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 8px; outline: none;">
+                                    <label style="display: block; margin-bottom: 10px; font-weight: 600; font-size: 0.9rem;">Email Address</label>
+                                    <input type="email" placeholder="john@example.com" required style="width: 100%; padding: 14px 20px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.1); background: white; outline: none; transition: var(--transition);">
                                 </div>
                             </div>
-                            <div style="margin-bottom: 20px;">
-                                <label style="display: block; margin-bottom: 8px; font-weight: 500;">Subject</label>
-                                <select style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 8px; outline: none; background: white;">
+                            <div>
+                                <label style="display: block; margin-bottom: 10px; font-weight: 600; font-size: 0.9rem;">Project Type</label>
+                                <select style="width: 100%; padding: 14px 20px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.1); background: white; outline: none; cursor: pointer;">
                                     <option>Android App Development</option>
                                     <option>Screen Mirroring Solution</option>
-                                    <option>UI/UX Design</option>
-                                    <option>Other Enquiry</option>
+                                    <option>Performance Optimization</option>
+                                    <option>UI/UX Design Redesign</option>
                                 </select>
                             </div>
-                            <div style="margin-bottom: 30px;">
-                                <label style="display: block; margin-bottom: 8px; font-weight: 500;">Your Message</label>
-                                <textarea rows="5" placeholder="Tell us about your project..." required style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 8px; outline: none; resize: none;"></textarea>
+                            <div>
+                                <label style="display: block; margin-bottom: 10px; font-weight: 600; font-size: 0.9rem;">Message Details</label>
+                                <textarea rows="6" placeholder="Tell us about your goals..." required style="width: 100%; padding: 14px 20px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.1); background: white; outline: none; resize: none;"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px;">Send Inquiry</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Map Placeholder -->
-        <section class="map-section" style="height: 400px; background: #f1f5f9; position: relative; overflow: hidden;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); flex-direction: column;">
-                <i class="fas fa-map-marked-alt fa-3x" style="margin-bottom: 15px;"></i>
-                <h3>Interactive Map Coming Soon</h3>
-                <p>Located in the heart of Silicon Valley</p>
-            </div>
-        </section>
     </main>
 
     <footer>
-        <!-- Reusing same footer -->
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <img src="images/logo.png" alt="Velocity App Studio Logo">
-                        <span>Velocity App Studio</span>
+            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 60px; margin-bottom: 60px;">
+                <div>
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 24px;">
+                        <img src="images/logo.png" alt="Logo">
+                        <span>Velocity<span style="color: var(--primary);">AppStudio</span></span>
                     </a>
-                    <p>Pioneering the future of Android mobile experiences with cutting-edge technology and user-centric design.</p>
+                    <p style="margin-bottom: 30px;">Premium Android development agency specialized in utility apps and high-performance mobile solutions.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul style="display: grid; gap: 12px;">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
+                <div>
                     <h4>Services</h4>
-                    <ul>
-                        <li><a href="#">Android Development</a></li>
-                        <li><a href="#">Screen Mirroring</a></li>
+                    <ul style="display: grid; gap: 12px;">
+                        <li><a href="#">Custom Apps</a></li>
+                        <li><a href="#">Mirroring</a></li>
+                        <li><a href="#">Optimization</a></li>
                         <li><a href="#">UI/UX Design</a></li>
-                        <li><a href="#">App Optimization</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:arsalankhan79661@gmail.com">arsalankhan79661@gmail.com</a></li>
-                        <li><i class="fas fa-phone"></i> <a href="https://wa.me/923329379661">+92 332 9379661</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Tech Valley, Silicon City</li>
+                <div>
+                    <h4>Contact Info</h4>
+                    <ul style="display: grid; gap: 16px;">
+                        <li><i class="fas fa-envelope" style="color: var(--primary); margin-right: 12px;"></i> arsalankhan79661@gmail.com</li>
+                        <li><i class="fas fa-phone" style="color: var(--primary); margin-right: 12px;"></i> +92 332 9379661</li>
+                        <li><i class="fas fa-location-dot" style="color: var(--primary); margin-right: 12px;"></i> Silicon Valley Tech Hub</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Velocity App Studio Solutions. All Rights Reserved.</p>
+            <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 40px; text-align: center; font-size: 0.9rem;">
+                <p>&copy; 2026 Velocity App Studio. All rights reserved.</p>
             </div>
         </div>
     </footer>
